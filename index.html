@@ -1,134 +1,194 @@
 <!DOCTYPE html>
+<html labg="en">
 
-<html>
 <head>
-    <title>Naasi Nixon's Resume </title>
-    <link rel="stylesheet" href="style.css">
+	<title>Resume | Naasi Nixon</title>
+
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="description" content="Naasi Nixon Resume"/>
+	<meta charset="UTF-8"> 
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+	<script src="index.js"></script>
 </head>
-<body>
-    <div class="container">
-        <div class="profile">
-            <div class="profile_container">
-                <div class="profileIMG">
-                    <img src="Profile_Pic.jpg" alt="Naasi Nixon">
-                </div>
-            <div>
-                <h1 class="profile_name">
-                    Naasi Nixon
-                </h1>
-                <p class="profile_title">IT Specialist (Atlanta, GA)</p>
-                <p class="description">
-                    I am a Cisco and AWS certified IT professional with 
-                    over six years of experience supporting public and 
-                    private sector clients.
-                </p>
-                <a class="DownloadButton" href="./Naasi.Nixon Resume.pdf"
-                 download="Naasi.NixonResume.pdf">Download Resume</a>
+
+
+
+<body id="top">
+   <div id="cv" class="instaFade">
+      <div id="contentContainer">
+         <div class="mainDetails">
+            <div id="profilePicture">
+               <img src="Profile_Pic.jpg" alt="Naasi Nixon">
             </div>
-            </div>    
-        </div>
-   <div class="group-1">
-    <div class="skills">
-        <h3 class="title">Skills</h3>
-        <ul class="skill_list description">
-            <li>Infrastructure and Administration<span class="description"> - Active Directory, Group Policy, VMware, O365, Okta</span></li>
-            <li>Networking<span class="description">- LAN/WAN, VLAN, Routing, Switching, TCP/IP, VPN, Cisco</span></li>
-            <li>Cloud Computing<span class="description">- EC2, S3, Load Balancing, CloudFormation, Route 53</span></li>
-            <li>Ticketing<span class="description">- Servicenow, Cherwell, Salesforce</span></li>           
-            
-        </ul>
-    </div>
-   
-
-    <div class="cert">
-        <h3 class="title">Certifications</h3>
-        <ul class="cert_item description">
-            <li>CCNA <span class="description"> (Cisco Certified Network Associate)</span></li>
-            <li>AWS SAA <span class="description"> (Amazon Web Services Solutions Architect Associate)</span></li>
-        </ul>
-    </div>
-
-        <div class="Education">
-            <h3 class="title">Education</h3>
-            <div class="edu_item">
-            <p class="item_preTitle">2010-2015</p>
-            <h4 class="item_title">Political Science</h4>
-            <p class="item_subtitle">Morehouse College</p>
-        </div>
-     </div>
-    <div class="ContactMe">
-            <h3 class="title">Contact</h3>
-            <div class="contact_info">
-                <p class="description">
-                    Atlanta, Georgia
-                </p>
-                <p class="description">
-                    404-798-7833
-                </p>
-                <p class ="description">
-                    naasi.nixon@gmail.com
-                </p>
-                <p class="description">
-                    <a class="DownloadButton" href="https://www.linkedin.com/in/naasi-nixon">www.linkedin.com/in/naasi-nixon</a>
-                </p>
-            </div>    
-    </div>
-    </div>
-
-
-   <div class="group2">
-        <div class="exp">
-            <h3 class="title">Experience</h3>
-            <div class="exp_item">
-                <h4 class="item_title">Truist</h4>
-                <p class="item_subtitle">Technical Support Analyst | <span class="workyear">Oct. 2021-Present</span></p>
-                <ul class="description">
-                    <li>Troubleshoots and supports the systems necessary for clients to perform their daily work operations</li>
-                    <li>Handles 15-20 tickets a day that are initiated through email, phone, or outreach.  90% Same-day resolution rate</li>
-                    <li>Acts as the primary point of contact for 20-30 clients, providing general troubleshooting or outreach for migration events</li>
-                    <li>Contributes to the knowledge-base system by submitting/updating articles based on experiences during daily work operations</li>         
-                </ul>
+            <div id="name">
+               <h1 class="quickFade delayTwo" style="margin-bottom: 0.33em;">Naasi Nixon</h1>
+               <h2 class="quickFade delayThree" style="margin-top: -0.33em; margin-bottom: 0.33em;">IT Specialist</h2>
+               <h3 class="quickFade delayFour" style="margin-top: -0.33em; text-indent: 4px;">Page Visits: <span id="counter">loading</span></h3>
             </div>
+            <div id="contactDetails" class="quickFade delayFour">
+               <ul>
+                  <li><a href="mailto:naasi.nixon@gmail.com" target="_blank">naasi.nixon@gmail.com</a></li>
+                  <li>(404)758-7833</li>
+                  <li><a href="www.linkedin.com/in/naasi-nixon" target="_blank">linkedin.com/in/naasi-nixon</a></li>
+                  <li>Atlanta, Ga</li>
+                  <li><a href="./Naasi.NixonResume.pdf" target="_blank" download="Naasi.NixonResume.pdf">Download Resume</a></li>
+               </ul>
+            </div>
+            <div class="clear"></div>
+         </div>
+	
 
-            <div class="exp_item">
-                <h4 class="item_title">GA Department of Public Health </h4>
-                <p class="item_subtitle">Help Desk Analyst 2 | <span class="workyear">Feb. 2020-Oct. 2021</span></p>
-                <ul class="description">
-                    <li>Supports and manages the systems necessary for the response against COVID-19</li>     
-                    <li>Systems supported - O365, OKTA, Pulse Secure VPN, VOIP, Active Directory</li>                                                                                                                                           
-                    <li>Troubleshoots and resolves various software and hardware issues that occur throughout the business environment</li>
-                    <li>Acts as the liaison for non-technical staff, teaching and simplifying the technical concepts that they may require for standard business operations</li>
-                </ul>
-              </div>
-            
-              <div class="exp_item">
-                <h4 class="item_title">Wellstar</h4>
-                <p class="item_subtitle">Pc Technician | <span class="workyear">Dec. 2019-Feb. 2020</span></p>
-                <ul class="description">
-                    <li>Assists in the setup and installation of computer workstations for new business environment</li>     
-                </ul>
-              </div>
-            
-              <div class="exp_item">
-                <h4 class="item_title">LivePerson Automotive</h4>
-                <p class="item_subtitle">Technical Support | <span class="workyear">Apr. 2017-Oct.2019</span></p>
-                <ul class="description">
-                    <li>Utilizes comprehensive troubleshooting skills to resolve a variety of technical tickets for clients</li>
-                    <li>Awarded 'Employee of the Month'  in two separate months, due to excelling in role</li>
-                    <li>Works with team to meet department-wide SLA goals and deadlines</li>    
-                </ul>
-              </div>
-                
-        </div>
-    </div>
-    <hr>
-    <div class="group-3">
-        <div class="contact">
-          <h3 class="title">This Page has been visited <span id="counter">loading...</span> Times</h3>
-        </div>
- </div>
+	<div id="mainArea" class="quickFade delayFive">
+		
+		<section>
+			<div class="sectionTitle full-width">
+				<h1>Profile</h1>
+			</div>
+		
+			<div class="sectionContent full-width">
+				<p>
+					I am a Cisco and AWS certified IT
+                    professional with over six years of experience supporting public and private sector clients.
+				</p>
+			</div>
+			<div class="clear"></div>
+		</section>
 
- <script src="index.js"></script>
- 
+		<section>
+			<div class="sectionTitle">
+				<h1>Work 
+				<br/>Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+
+				<article class="job-article">
+					<h2>Truist | Technical Support Analyst</h2>
+					<p class="subDetails">October 2021 - Present</p>
+					<ul>
+						<li>Troubleshoots and supports the systems necessary for clients to perform their daily work operations</li>
+                    	<li>Handles 15-20 tickets a day that are initiated through email, phone, or outreach.  90% Same-day resolution rate</li>
+                    	<li>Acts as the primary point of contact for 20-30 clients, providing general troubleshooting or outreach for migration events</li>
+                    	<li>Contributes to the knowledge-base system by submitting/updating articles based on experiences during daily work operations</li>
+						
+					</ul>
+				</article>
+
+				<article class="job-article">
+					<details>
+						<summary>
+							<h2>Ga Dept of Public Health | Help Desk Analyst 2</h2>
+							<p class="subDetails">February 2020 - October 2021</p>
+						</summary>
+						<ul>
+						<li>Supports and manages the systems necessary for the response against COVID-19</li>     
+                    	<li>Systems supported - O365, OKTA, Pulse Secure VPN, VOIP, Active Directory</li>                                                                                                                                           
+                    	<li>Troubleshoots and resolves various software and hardware issues that occur throughout the business environment</li>
+                    	<li>Acts as the liaison for non-technical staff, teaching and simplifying the technical concepts that they may require for standard business operations</li>
+						</ul>
+					</details>
+				</article>
+				
+				<article class="job-article">
+					<details>
+						<summary>
+							<h2>Wellstar | Pc Technician</h2>
+							<p class="subDetails">December 2019 - February 2020</p>
+						</summary>
+						<ul>
+							<li>Assists in the setup and installation of computer workstations for new business environment</li>
+						</ul>
+					</details>
+				</article>
+				
+				<article class="job-article">
+					<details>
+						<summary>
+							<h2>LivePerson Automotive | Technical Support</h2>
+							<p class="subDetails">April 2017 - October 2019</p>
+						</summary>
+						<ul>
+							<li>Utilizes comprehensive troubleshooting skills to resolve a variety of technical tickets for clients</li>
+                    		<li>Awarded 'Employee of the Month'  in two separate months, due to excelling in role</li>
+                    		<li>Works with team to meet department-wide SLA goals and deadlines</li>
+						</ul>
+					</details>
+				</article>
+				
+							
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Certifications</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<ul class="education-list">
+						<li>AWS Solutions Architect Associate</li>
+						<li>Cisco Certified Network Associate</li>
+					</ul>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<p><span style="font-weight:bold">Infrastructure and Administration</span> - Active Directory, Group Policy, VMware, O365, Okta</p>
+            		<p><span style="font-weight:bold">Networking</span> - LAN/WAN, VLAN, Routing, Switching, TCP/IP, VPN, Cisco</p>
+            		<p><span style="font-weight:bold">Cloud Computing</span> - EC2, S3, CloudWatch, CloudFormation, Route 53</p>
+            		<p><span style="font-weight:bold">Ticketing</span> - Servicenow, Cherwell, Salesforce</p>
+
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<ul class="education-list">
+						<p>Morehouse College | Political Science (2010-2015)</p>
+						
+					</ul>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle full-width">
+				<h1>About This Website</h1>
+			</div>
+		
+			<div class="sectionContent full-width">
+				<p>
+					This website was created through HTML/CSS/JSS
+				</p>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+	</div>
+</div>
+
 </body>
 </html>

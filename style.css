@@ -1,197 +1,500 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-:root{
-    --primary-color: grey;
-    --text-color: black;
-}
-html{
-    font-size:10px;
-}
-body{
-    font-family: Inter, sans-serif;
-    background-color: whitesmoke;
-    color: black;
-}
-/*common styles */
-img{
-    width: 100%;
-}
-a{
-    text-decoration: none;
-    color: rgb(42, 123, 137);
-}
-.description{
-    margin-top: 1rem;
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: var(--text-color)
-    
-}
-
-
-.title{
-    color: rgb(42, 123, 137);
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-.item_pretitle{
-    font-size: 1.6rem;
-    color: var(--text-color);
-    font-weight: 300;
-}
-.item_title{
-    font-size:1.7rem;
-    color: black;
-    font-weight: 900;
-    margin: 0.8rem 0;
-}
-.item_subtitle {
-    font-size: 1.6rem;
-    color: #738f93;
-    font-weight: 500;
-}
-
-/*layouts */
-.container{
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    padding: 5rem;
-    background: whitesmoke;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-@media only screen and (max-width: 768px){
-  .container {
-    width: 100%;
-    grid-template-columns: 1fr;
-    padding: 3rem;
-    gap: 7rem;
-  }
-}
-.profile{
-    grid-column: 1 / -1;
-    margin-bottom: 2rem;
-}
-
-.group-1{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-
-}
-
-.group-2{
-	display: flex;
-	flex-direction: column;
-	gap: 5rem;
-    
-}
-
-.group-3 {
-	max-width: 700px;
-	width: 100%;
-	margin: 0 auto;
-	grid-column: 1/-1;
-	display: flex;
-	flex-direction: row;
-	gap: 5rem;
-    text-align: center;
-}
-.group-3 > div {
-	flex: 1;
-}
-
-/* profile */
-.profile_container{
-    display: flex;
-    gap: 2rem;
-}
-.profile_profileImg{
-    max-width: 250px;
-}
-.profile_name{
-    color: rgb(42, 123, 137);
-    font-weight: 600;
-    font-size: clamp(2rem, 8vw, 4rem);
-    display: block;
-}
-
-.profile_title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.DownloadButton{
-    display: block;
-    text-decoration: underline;
-    font-size: 1.6rem;
-    margin-top: 1rem;
-}
-.DownloadButton:hover{
-    color: black
-}
-
-
-.workyear{
-    font-size: 14px;
-    color: #738f93;
-}
-
-@media only screen and (max-width: 760px){
-    .profile_container {
-        flex-direction: column;
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
     }
-}
+    
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+    }
+    
+    html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+    
+    .clear {clear: both;}
+    
+<!-- 
+#contentContainer {
+    padding: 25px 35px;
+    border-bottom: 2px solid #cf8a05;
+    background: #ededed;
+ }
+    #profilePicture {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 20px;
+        float: left;
+     }
+     
+     #profilePicture img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+     }
 
-/*skills*/
-.skill_list{
-    margin-top: 1rem;
-    margin-left: 2rem;
-    line-height: 2;
-    font-size:1.7rem;
-    color: black;
-    font-weight: 900;
-}
+<!-- 
 
-/*certs*/
-.cert_item{
-    margin-top: 1rem;
-    margin-left: 2rem;
-    line-height: 2;
-    font-size:1.7rem;
-    color: black;
-    font-weight: 900;
-}
-
-/*education*/
-.edu_item {
-    margin-top: 2rem;
-
-}
-
-/* exp */
-.exp_item {
-	margin-top: 2rem;
-}
-
-hr {
-	grid-column: 1/-1;
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 5rem;
-	margin-bottom: 1rem;
-	border: none;
-	border-top: 2px solid rgba(128, 128, 128, 0.229);
-}
-@media only screen and (max-width: 768px) {
-	hr {
-		margin: 0 auto;
-	}
-}
+    p {
+        font-size: 1em;
+        line-height: 1.4em;
+        margin-bottom: 20px;
+        color: #444;
+    }
+    
+    
+    .project-font {
+        font-size: .9em;
+    }
+    
+    .project-ul {
+        list-style-type: disc;
+    }
+    
+    .project-li {
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    
+    .project-button {
+        display: inline-block;
+        margin-left: auto;
+          font-size: .8em;
+        border: 1px solid #cf8a05;
+        border-radius: 2px;
+        padding: 3px 6px;
+        background-color: rgb(249, 219, 164);
+        cursor: pointer;
+        box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+          transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .project-button:hover {
+      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    .project-font {
+        font-size: .9em;
+        margin-bottom: 0%;
+    }
+    
+    #cv {
+        width: 90%;
+        max-width: 800px;
+        background: #f3f3f3;
+        margin: 30px auto;
+    }
+    
+    .mainDetails {
+        padding: 25px 35px;
+        border-bottom: 2px solid #cf8a05;
+        background: #ededed;
+    }
+    
+    .mainDetails h1, h2, h4 {
+        text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+          transition: text-shadow 0.3s ease-in-out;
+    }
+    
+    #name h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        margin-bottom: -6px;
+    }
+    
+    #name h2 {
+        font-size: 2em;
+        margin-left: 2px;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    }
+    
+    #mainArea {
+        padding: 0 40px;
+    }
+    
+    #headshot {
+        width: 12.5%;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    #headshot img {
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+    
+    #name {
+        float: left;
+    }
+    
+    #contactDetails {
+        float: right;
+    }
+    
+    #contactDetails ul {
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-top: 2px;
+    }
+    
+    #contactDetails ul li {
+        margin-bottom: 3px;
+        color: #444;
+        line-height: 2;
+    }
+    
+    #contactDetails ul li a, a[href^=tel] {
+        color: #444; 
+        text-decoration: none;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+    
+    #contactDetails ul li a:hover { 
+        color: #cf8a05;
+    }
+    
+    #contactDetails button {
+        margin-left: auto;
+        font-size: 1em;
+        border: 1px solid #cf8a05;
+        border-radius: 4px;
+        padding: 6px 12px;
+        background-color: rgb(255, 212, 133);
+        font-family: 'Lato', helvetica, arial, sans-serif;
+        cursor: pointer;
+        box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      
+      #contactDetails button:hover {
+        box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+      }
+    
+    section {
+        border-top: 1px solid #dedede;
+        padding: 20px 0 0;
+    }
+    
+    section:first-child {
+        border-top: 0;
+    }
+    
+    section:last-child {
+        padding: 20px 0 10px;
+    }
+    
+    .sectionTitle {
+        float: left;
+        width: 25%;
+    }
+    
+    .sectionTitle.full-width {
+        float: left;
+        width: 25%;
+        margin-bottom: 10px;
+    }
+    
+    .sectionContent {
+        float: right;
+        width: 72.5%;
+    }
+    
+    .sectionContent.full-width {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sectionTitle h1 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 1.5em;
+        color: #cf8a05;
+    }
+    
+    .sectionContent h2 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-size: 1.3em;
+        margin-bottom: -2px;
+    }
+    
+    .subDetails {
+        font-size: 0.8em;
+        font-style: italic;
+        margin-bottom: 3px;
+    }
+    
+    .keySkills {
+        list-style-type: none;
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1;
+        margin-bottom: 20px;
+        font-size: 1em;
+        color: #444;
+    }
+    
+    .keySkills ul li {
+        margin-bottom: 3px;
+    }
+    
+    .education-list li {
+        margin-bottom: 1em; /* adjust as necessary */
+    }
+    
+    .job-article ul,
+    .job-article li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .job-article summary h2 {
+        display: inline-block;
+        margin: 0; /* To remove any default margin */
+    }
+    
+    .job-article {
+        margin-bottom: 20px; /* or whatever value you find suitable */
+    }
+    
+    .web-dev-projects {
+        display:inline;
+    }
+    
+    #web-dev-portfolio container {
+        box-sizing: border-box;
+        padding: 0.5rem;
+        max-width: 50;
+    }
+    
+    #web-dev-portfolio container img {
+        width: 45%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    
+    #web-dev-portfolio container h1{
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 1.5em;
+        color: #cf8a05;
+    }
+    
+    @media (max-width: 768px) { 
+        #web-dev-portfolio container {
+            flex: 0 0 100%;
+        }
+    }
+    
+    @media all and (min-width: 602px) and (max-width: 800px) {
+        #headshot {
+            display: none;
+        }
+        
+        .keySkills {
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 601px) {
+        #cv {
+            width: 95%;
+            margin: 10px auto;
+            min-width: 280px;
+        }
+        
+        #headshot {
+            display: none;
+        }
+        
+        #name, #contactDetails {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .sectionTitle, .sectionContent {
+            float: none;
+            width: 100%;
+        }
+        
+        .sectionTitle {
+            margin-left: -2px;
+            font-size: 1.25em;
+        }
+        
+        .keySkills {
+            -moz-column-count:2;
+            -webkit-column-count:2;
+            column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 480px) {
+        .mainDetails {
+            padding: 15px 15px;
+        }
+        
+        section {
+            padding: 15px 0 0;
+        }
+        
+        #mainArea {
+            padding: 0 25px;
+        }
+    
+        
+        .keySkills {
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1;
+        }
+        
+        #name h1 {
+            line-height: .8em;
+            margin-bottom: 4px;
+        }
+    }
+    
+    @media print {
+        #cv {
+            width: 100%;
+        }
+    }
+    
+    @-webkit-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .instaFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
+    }
+    
+    .quickFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 2.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 2.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in;
+    }
+     
+    .delayOne {
+        -webkit-animation-delay: 0, .5s;
+        -moz-animation-delay: 0, .5s;
+        animation-delay: 0, .5s;
+    }
+    
+    .delayTwo {
+        -webkit-animation-delay: 0, 1s;
+        -moz-animation-delay: 0, 1s;
+        animation-delay: 0, 1s;
+    }
+    
+    .delayThree {
+        -webkit-animation-delay: 0, 1.5s;
+        -moz-animation-delay: 0, 1.5s;
+        animation-delay: 0, 1.5s;
+    }
+    
+    .delayFour {
+        -webkit-animation-delay: 0, 2s;
+        -moz-animation-delay: 0, 2s;
+        animation-delay: 0, 2s;
+    }
+    
+    .delayFive {
+        -webkit-animation-delay: 0, 2.5s;
+        -moz-animation-delay: 0, 2.5s;
+        animation-delay: 0, 2.5s;
+    }
