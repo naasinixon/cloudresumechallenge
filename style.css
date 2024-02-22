@@ -18,7 +18,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 <!-- 
 #contentContainer {
     padding: 25px 35px;
-    border-bottom: 2px solid #cf8a05;
+    border-bottom: 2px solid rgb(42, 123, 137);
     background: #ededed;
  }
     #profilePicture {
@@ -45,42 +45,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
         color: #444;
     }
     
-    
-    .project-font {
-        font-size: .9em;
-    }
-    
-    .project-ul {
-        list-style-type: disc;
-    }
-    
-    .project-li {
-        display: inline-block;
-        padding-bottom: 10px;
-    }
-    
-    .project-button {
-        display: inline-block;
-        margin-left: auto;
-          font-size: .8em;
-        border: 1px solid #cf8a05;
-        border-radius: 2px;
-        padding: 3px 6px;
-        background-color: rgb(249, 219, 164);
-        cursor: pointer;
-        box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-          transition: box-shadow 0.3s ease-in-out;
-    }
-    
-    .project-button:hover {
-      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
-    }
-    
-    
-    .project-font {
-        font-size: .9em;
-        margin-bottom: 0%;
-    }
+
     
     #cv {
         width: 90%;
@@ -91,7 +56,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     
     .mainDetails {
         padding: 25px 35px;
-        border-bottom: 2px solid #cf8a05;
+        border-bottom: 2px solid rgb(42, 123, 137);
         background: #ededed;
     }
     
@@ -221,7 +186,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
         font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
         font-style: italic;
         font-size: 1.5em;
-        color: #cf8a05;
+        color: rgb(42, 123, 137);
     }
     
     .sectionContent h2 {
